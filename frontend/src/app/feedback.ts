@@ -5,5 +5,5 @@ export class Feedback {
   rating: string;
   title: string;
   description: string;
-  date?: string
+  date?: string;
 }

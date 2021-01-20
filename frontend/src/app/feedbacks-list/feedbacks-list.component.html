@@ -6,7 +6,7 @@
         <b>{{ feedback.title }}</b>
         <div id="date">{{ feedback.date}}</div>
       </mat-expansion-panel-header>
-      {{ feedback.login }}
+      <p>{{ feedback.login }}</p>
       <hr>
       <p>{{ feedback.description }}</p>
       <p>Rating: <ngx-input-star-rating value="{{feedback.rating}}" name="rating"></ngx-input-star-rating></p>

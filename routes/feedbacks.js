@@ -5,7 +5,6 @@ const Feedback = require('../models/feedback');
 router.get('/',  async (req, res) => {
    try {
         const feedbacks = await Feedback.find();
-        res.setHeader('content-type', 'application/json');
         res.json(feedbacks);
     } catch(err) {
         res.json({err_message: err});
@@ -21,8 +20,7 @@ router.post('/', async (req,res) => {
         description: req.body.description
     });
     try {
-        await feedback.save().then(()=> {
-        });
+        await feedback.save();
         res.json(feedback);
     } catch(err) {
         res.json({err_message: err});
