@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import {Feedback} from "./feedback";
 
 @Injectable({
   providedIn: 'root'
