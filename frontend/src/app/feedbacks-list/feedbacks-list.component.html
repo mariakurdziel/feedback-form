@@ -1,0 +1,16 @@
+<h1>User feedbacks:</h1>
+<div class="feedbacks">
+  <mat-accordion multi="true">
+    <mat-expansion-panel *ngFor="let feedback of feedbacks">
+      <mat-expansion-panel-header>
+        <b>{{ feedback.title }}</b>
+        <div id="date">{{ feedback.date}}</div>
+      </mat-expansion-panel-header>
+      {{ feedback.login }}
+      <hr>
+      <p>{{ feedback.description }}</p>
+      <p>Rating: <ngx-input-star-rating value="{{feedback.rating}}" name="rating"></ngx-input-star-rating></p>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
+<button type="button" class="btn btn-primary" routerLink="/">Return to main screen</button>

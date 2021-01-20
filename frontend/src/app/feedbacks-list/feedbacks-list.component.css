@@ -1,0 +1,40 @@
+h1 {
+  margin-top: 4%;
+  justify-content: center;
+  text-align: center;
+  font-size: 35px;
+}
+
+mat-expansion-panel {
+  font-size: 25px;
+  color: #2c3233;
+  background-color: silver;
+}
+
+#date {
+  position: absolute;
+  left: 75%;
+}
+
+.btn {
+  font-size: 22px;
+  display: block;
+  margin: auto;
+}
+
+.feedbacks {
+  margin: 4% auto;
+  width: 50%
+}
+
+@media screen and (max-width:1024px){
+  #date {
+    left: 70%;
+  }
+}
+
+@media screen and (max-width:768px){
+  #date {
+    left: 60%;
+  }
+}
